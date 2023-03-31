@@ -10,7 +10,7 @@
 
 .sub {
     width: 95%;
-    height: 92%;
+    height: 92vh;
     background-color: "#1E2D3D";
     border-radius: 10px;
 }
@@ -22,6 +22,15 @@
     height: 6vh;
     border: 1.4px solid #434446b9;
     border-radius: 10px 10px 0px 0px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    border: 1.4px solid #434446b9;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .myName {
@@ -59,6 +68,23 @@
     color: #607B96;
 }
 
+.socials{
+    width: 52px;
+    height: 100%;
+    border: 1px solid #434446b9;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    color: #607B96;
+}
+
 .Linkouter {
     width: 122px;
     height: 100%;
@@ -75,6 +101,28 @@
     line-height: 21px;
     color: #607B96;
     border-radius: 0px 10px 0px 0px;
+}
+
+.LinkouterFt {
+    width: 322px;
+    height: 100%;
+    border: 1px solid #434446b9;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 21px;
+    color: #607B96;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.Top{
+    height: 93%;
 }
 
 .Link.active {
