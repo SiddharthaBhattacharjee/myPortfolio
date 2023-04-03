@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
+import rules from './res/bgrules.png';
+import Snake from './SnakeGame';
 
 function Home() {
   const skills = [
@@ -38,14 +40,26 @@ function Home() {
     <div className="home">
       <div className="homeLeft">
         <p>
-          <section className='Line_1'>Hi all. I am</section><br />
-          <section className='Name_'>SIDDHARTHA BHATTACHARJEE</section><br />
+          <section className='Line_1'>Hi all. I am</section>
+          <section className='Name_'>SIDDHARTHA BHATTACHARJEE</section>
           <section className='Line_2'> &gt; {currentSkill}<span className="cursor"></span></section>
-          <br/>
-          <br/>
         </p>
+        <br/>
+        <br/>
+          <section className='Comment'>// complete the game to continue</section>
+          <section className='Comment'>// you can also see it on my Github page</section>
+          <p className='githublink'><span style={{color:'#4D5BCE'}}>const&nbsp;</span><span style={{color:'#43D9AD'}}>githubLink&nbsp;</span> <span style={{color:"white"}}> =&nbsp;</span><a href="https://github.com/SiddharthaBhattacharjee/myPortfolio" target="_blank" rel="noreferrer" className='gtlink'>“https://github.com/SiddharthaBhattacharjee/myPortfolio”</a><span style={{color:"white"}}>;</span></p>
       </div>
-      <div className="homeRight"></div>
+      <div className="homeRight">
+        <div className="homeRightInner">
+          <div className="homeRightInnerTop">
+            <Snake percentageWidth={70} snakeColor="#43D9AD" appleColor="#43D9AD"/> 
+          </div>
+          <div className="homeRightInnerBottom">
+            <img src={rules}></img>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

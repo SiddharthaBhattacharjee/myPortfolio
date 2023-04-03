@@ -1,69 +1,135 @@
-.Home{
-    width: 100%;
-    height: 100%;
-}
-.homeLeft{
-    width: 60%;
-    height: 79vh;
-    float: left;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.Home {
+  width: 100%;
+  height: 100%;
 }
 
-.Line_1{
-    font-family: 'Fira Code', 'Courier New', monospace;
-    font-style: normal;
-    font-weight: 450;
-    font-size: 18px;
-    color: #E5E9F0;
+.homeLeft {
+  width: 60%;
+  height: 79vh;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-left: 5%;
 }
 
-.Name_{
-    font-family: 'Fira Code', 'Courier New', monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    color: #E5E9F0;
+.gtlink{
+  cursor: pointer;
+  color:#E99287;
+  text-decoration: none;
 }
 
-.Line_2{
-    font-family: 'Fira Code','Courier New', monospace;
-    font-style: normal;
-    font-weight: 450;
-    font-size: 32px;
-    color: #4D5BCE;
+.Line_1 {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  color: #E5E9F0;
+  padding-left: 1%;
 
 }
 
-.homeRight{
-    width: 40%;
-    height: 79vh;
-    float: right;
-    padding: 20px;
-    box-sizing: border-box;
+.Name_ {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: #E5E9F0;
+}
+
+.Line_2 {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 32px;
+  color: #4D5BCE;
+
+}
+
+.homeRight {
+  width: 40%;
+  height: 79vh;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url(./res/bgblur.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeRightInner {
+  width: 82%;
+  height: 70%;
+  background-image: url(./res/bgsnake.png);
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeRightInnerTop{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.homeRightInnerBottom{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.homeRightInnerBottom img{
+  height: 95%;
+  width: auto;
 }
 
 .cursor {
-    display: inline-block;
-    width: 4px;
-    height: 22px;
-    background-color: white;
-    animation: blink 1s infinite;
+  display: inline-block;
+  width: 4px;
+  height: 22px;
+  background-color: white;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
   }
-  
-  @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+
+  50% {
+    opacity: 1;
   }
-  
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.Comment{
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  color: #607B96;
+  line-height: 21px;
+}
+
+.githublink{
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
