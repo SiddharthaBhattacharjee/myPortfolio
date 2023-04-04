@@ -21,8 +21,8 @@ class SnakeGame extends React.Component {
       direction: 'right',
       directionChanged: false,
       isGameOver: false,
-      snakeColor: this.props.snakeColor || this.getRandomColor(),
-      appleColor: this.props.appleColor || this.getRandomColor(),
+      snakeColor: "#43D9AD",
+      appleColor: "#43D9AD",
       score: 0,
       highScore: Number(localStorage.getItem('snakeHighScore')) || 0,
       newHighScore: false,
@@ -147,8 +147,8 @@ class SnakeGame extends React.Component {
       directionChanged: false,
       isGameOver: false,
       gameLoopTimeout: 50,
-      snakeColor: this.getRandomColor(),
-      appleColor: this.getRandomColor(),
+      snakeColor: "#43D9AD",
+      appleColor: "#43D9AD",
       score: 0,
       newHighScore: false,
     })
@@ -376,7 +376,10 @@ class SnakeGame extends React.Component {
         style={{
           width: this.state.width,
           height: this.state.height,
-          borderWidth: this.state.width / 50,
+          background: 'rgba(1, 22, 39, 0.84)',
+          borderWidth: '0px',
+          borderRadius: '6px',
+          boxShadow: 'inset 1px 5px 11px rgba(2, 18, 27, 0.71)',
         }}>
         {this.state.snake.map((snakePart, index) => {
           return (
@@ -403,7 +406,7 @@ class SnakeGame extends React.Component {
             background: this.state.appleColor,
           }}
         />
-        <div id='Score' style={{ fontSize: this.state.width / 20 }}>
+        <div id='Score' style={{ fontSize:'18px' ,FontFace:'Fira Code, Courier New', fontWeight:'500', color:'white'}}>
           HIGH-SCORE: {this.state.highScore}&ensp;&ensp;&ensp;&ensp;SCORE:{' '}
           {this.state.score}
         </div>
