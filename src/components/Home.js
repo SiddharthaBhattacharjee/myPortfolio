@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import rules from './res/controlls.png';
 import Snake from './SnakeGame';
 
 function Home() {
